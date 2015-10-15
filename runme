@@ -1,0 +1,14 @@
+#!/bin/sh
+set -ex
+#
+# make sure DynaLoader can find Xerces.so
+#
+LD_LIBRARY_PATH=/app/clarity/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+
+# Fix permissions on import.
+find . -name runme -exec chmod 755 {} \;
+
+# off to Perl-land
+#
+exec $GA_PERL $GA_SCRIPT_DIR/perl/runme.pl

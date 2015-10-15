@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<check>
+  <id>check_03</id>
+  <name>Check #03</name>
+  <description>Check to see whether the specified files exist</description>
+  <detect method="perl-script">files_exist.pl</detect>
+  <recommendation>File(s) should exist</recommendation>
+</check>

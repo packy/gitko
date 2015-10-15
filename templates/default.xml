@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<defaults>
+  <custom_fields>
+
+    <field>
+      <name>SUITE</name>
+      <value>SKEL</value>
+      <required>true</required>
+      <hidden>true</hidden>
+    </field>
+
+    <!-- required for check_03 -->
+
+    <field>
+      <name>LIST_OF_EXISTING_FILES_DESCRIPTION</name>
+      <value>
+A comma-separated list of files that should exist on target node.
+Example: /etc/file1, /etc/file2
+
+Affects: check_03</value>
+      <editable>false</editable>
+    </field>
+
+    <field>
+      <name>LIST_OF_EXISTING_FILES</name>
+      <value>/etc/redhat-release</value>
+      <type>textarea</type>
+    </field>
+
+  </custom_fields>
+
+  <editable>
+    <notification_emails/>
+  </editable>
+
+  <non_editable/>
+
+</defaults>

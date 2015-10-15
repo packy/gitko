@@ -1,0 +1,6 @@
+@echo off
+
+IF NOT DEFINED GA_DAGENT_DIR set GA_DAGENT_DIR=%GA_VAR_DIR:~0,-4%
+
+PATH=%PATH%;%GA_DAGENT_DIR%
+"%GA_PERL%" "%GA_SCRIPT_DIR%\perl\runme.pl"
